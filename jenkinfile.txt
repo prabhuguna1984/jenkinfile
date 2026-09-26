@@ -1,0 +1,25 @@
+pipleline{
+
+  agent any	
+	stages{
+
+	  Stage(build){
+		steps{
+		echo "Code is getting build.... please wait !!"
+		}
+{
+	  Stage(deploy){steps{
+		echo "Code is getting deployed.... please wait !!"
+		}}
+ 	 Stage(test){steps{
+		echo "Test is getting executed .... please wait !!"
+		}}
+  	Stage(release){steps{
+		echo "Release happening  .... please wait !!"
+		}
+}
+
+	
+	}
+
+}
